@@ -15,6 +15,8 @@ class String
   end
 
   def count_sentences
+    delimiters = []
+    split(Regexp.union(delimiters))
     self.squeeze.split()
   end
 end
